@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>مشغل القرآن الكريم</title>
+  <link rel="stylesheet" href="css/quran.css" />
+  <!--Render All Nlements Normaly -->
+  <link rel="stylesheet" href="css/normalize.css" />
+  <!--Font Awsome Library-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@200;300;400;500&display=swap" rel="stylesheet" />
+</head>
+
+<body dir="rtl" id="body">
+  <div class="player">
+    <div class="topBar">
+      <i class="material-icons"> widgets </i>
+      <p>مشغل القرآن الكريم</p>
+      <i class="material-icons"> expand_more </i>
+    </div>
+    <div class="playerImg">
+      <img src="./img/quran3.png" alt="" />
+    </div>
+    <div class="playerinfo">
+      <div class="quranName">سورة الفاتحة AL-Faatihah</div>
+      <div class="theReader">بصوت القارئ عبدالرحمن السديس</div>
+    </div>
+    <div class="playerProgress">
+      <div class="progressBar">
+        <audio id="quranAudio" src=""></audio>
+      </div>
+      <div class="quranTime">
+        <span class="startTime">00:00</span>
+        <span class="maxTime">00:00</span>
+      </div>
+    </div>
+    <div class="playerControls">
+      <i class="material-icons" id="more-quran"> queue_music </i>
+      <i class="material-icons" id="prev"> skip_next </i>
+      <div class="playerPlay">
+        <i class="material-icons"> play_arrow </i>
+      </div>
+      <i class="material-icons" id="next"> skip_previous </i>
+      <i class="material-icons" id="repeat">repeat</i>
+    </div>
+    <div class="quran-list">
+      <div class="header">
+        <div class="row">
+          <p>قائمة القرآن الكريم</p>
+          <div class="headericons">
+            <div class="search">
+              <input class="p-10" type="search" placeholder="البحث">
+            </div>
+            <i id="close" class="material-icons">close</i>
+          </div>
+        </div>
+      </div>
+      <ul class="ul">
+
+      </ul>
+    </div>
+  </div>
+  </div>
+  <h4>من تصميم و إنشاء طلحاوي صابر 🧡</h4>
+  <script src="js/quranPlayer.js"></script>
+</body>
+</html>

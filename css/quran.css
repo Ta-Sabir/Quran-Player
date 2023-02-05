@@ -1,0 +1,285 @@
+/* Start Global Rules */
+:root {
+  --main-color: #ff3946;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Vazirmatn", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 0 15px;
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+.player {
+  background-color: #fff;
+  box-shadow: 0 3px 40px rgb(0 0 0 / 10%);
+  border-radius: 15px;
+  width: 350px;
+  padding: 25px 30px;
+  position: relative;
+  overflow: hidden;
+}
+.topBar,
+.playerControls,
+.quranTime {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.playerImg {
+}
+.playerImg img {
+  width: 180px;
+  border: 3px solid var(--main-color);
+  border-radius: 50%;
+  display: block;
+  margin: 30px auto 0;
+  padding: 1px;
+  animation: rotate 6s linear infinite;
+  animation-play-state: paused;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(360deg);
+  }
+
+  to {
+    transform: rotate(0deg);
+  }
+}
+.playerImg.play img {
+  animation-play-state: running;
+}
+.player .playerinfo {
+  margin: 30px 0;
+  text-align: center;
+  line-height: 1.8;
+}
+.player .playerinfo .quranName {
+  color: var(--main-color);
+  font-size: 18px;
+  font-weight: bold;
+}
+.playerProgress {
+  height: 6px;
+  width: 100%;
+  border-radius: 50px;
+  background: #f0f0f0;
+  cursor: pointer;
+}
+.progressBar {
+  height: inherit;
+  width: 0%;
+  position: relative;
+  border-radius: inherit;
+  background: var(--main-color);
+}
+.progressBar::before {
+  content: "";
+  position: absolute;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  top: 50%;
+  left: -5px;
+  z-index: 2;
+  pointer-events: none;
+  transform: translateY(-50%);
+  background: inherit;
+}
+.quranTime {
+  margin-top: 3px;
+}
+.quranTime span {
+  font-size: 11px;
+  color: var(--main-color);
+  font-weight: bold;
+  margin-top: 7px;
+}
+.playerControls {
+  margin: 40px 0 5px 0;
+}
+i {
+  cursor: pointer;
+}
+.playerControls i {
+  font-size: 25px;
+  transition: 0.5s;
+}
+.playerControls i:not(.playerPlay i):hover {
+  color: var(--main-color);
+}
+.playerControls i:nth-child(2),
+.playerControls i:nth-child(4) {
+  font-size: 35px;
+}
+.playerControls #prev {
+  margin-right: -13px;
+}
+.playerControls #next {
+  margin-left: -13px;
+}
+.playerPlay {
+  height: 45px;
+  width: 45px;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: var(--main-color);
+  color: white;
+  transition: background 0.3s ease;
+}
+
+.quran-list {
+  position: absolute;
+  background: white;
+  width: 100%;
+  height: 308px;
+  left: 0px;
+  bottom: 0;
+  margin-bottom: 15px;
+  transform: translateY(500%);
+  z-index: 5;
+  padding: 20px;
+  box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.5s;
+}
+.quran-list.show {
+  bottom: 0;
+  transform: translateY(0);
+}
+.header .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 19px;
+  color: ;
+}
+.header .row i {
+  cursor: default;
+}
+.header .row p {
+  font-size: 17px;
+}
+.header .row span {
+  margin-left: 5px;
+}
+.header #close {
+  font-size: 22px;
+  cursor: pointer;
+}
+.quran-list ul {
+  margin: 10px 0;
+  max-height: 260px;
+  overflow: auto;
+}
+.quran-list ul::-webkit-scrollbar {
+  width: 0px;
+}
+.quran-list ul li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  padding-bottom: 10px;
+  margin-bottom: 5px;
+  color: var(--lightblack);
+  border-bottom: 1px solid #e5e5e5;
+}
+.quran-list ul li:last-child {
+  border-bottom: 0px;
+}
+.quran-list ul li .row {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 10px;
+}
+.quran-list ul li .row span {
+  font-size: 15px;
+}
+.quran-list ul li .row p {
+  font-size: 12px;
+  opacity: 0.9;
+}
+ul li .audio-duration {
+  font-size: 13px;
+}
+ul li.playing {
+  pointer-events: none;
+  color: var(--bottom-bg);
+}
+.theReader {
+  font-size: 13px;
+  font-weight: 500;
+}
+.headericons {
+  display: flex;
+  align-items: center;
+}
+.search {
+  position: relative;
+}
+
+.search input {
+  border: 2px solid #ccc;
+  border-radius: 30px;
+  margin-left: 6px;
+  padding: 4px;
+  font-size: 14px;
+  width: 130px;
+  transition: width var(--main-transition);
+}
+.search input:focus {
+  outline: none;
+}
+h4 {
+  position: absolute;
+  bottom: 20px;
+}
