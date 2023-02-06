@@ -279,7 +279,3 @@ ul li.playing {
 .search input:focus {
   outline: none;
 }
-h4 {
-  position: absolute;
-  bottom: 20px;
-}
