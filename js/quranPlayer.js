@@ -692,6 +692,48 @@ let allQuranAudio = [
   },
   {
     name: "سورة الكهف Al-Kahf",
+    theReader: "بصوت القارئ   إسلام صبحي",
+    image: "img/quran3.png",
+    src: "https://server14.mp3quran.net/islam/Rewayat-Hafs-A-n-Assem/018.mp3",
+  },
+  {
+    name: "سورة الرعد Ar-Raad",
+    theReader: "بصوت القارئ   إسلام صبحي",
+    image: "img/quran3.png",
+    src: "https://server14.mp3quran.net/islam/Rewayat-Hafs-A-n-Assem/013.mp3",
+  },
+  {
+    name: "سورة الرحمن Ar-Rahmaan",
+    theReader: "بصوت القارئ   إسلام صبحي",
+    image: "img/quran3.png",
+    src: "https://server14.mp3quran.net/islam/Rewayat-Hafs-A-n-Assem/055.mp3",
+  },
+  {
+    name: "سورة الملك Al-Mulk",
+    theReader: "بصوت القارئ   إسلام صبحي",
+    image: "img/quran3.png",
+    src: "https://server14.mp3quran.net/islam/Rewayat-Hafs-A-n-Assem/067.mp3",
+  },
+  {
+    name: "سورة الجن Al-Jinn",
+    theReader: "بصوت القارئ   إسلام صبحي",
+    image: "img/quran3.png",
+    src: "https://server14.mp3quran.net/islam/Rewayat-Hafs-A-n-Assem/072.mp3",
+  },
+  {
+    name: "سورة النازعات An-Naazi`aat",
+    theReader: "بصوت القارئ   إسلام صبحي",
+    image: "img/quran3.png",
+    src: "https://server14.mp3quran.net/islam/Rewayat-Hafs-A-n-Assem/079.mp3",
+  },
+  {
+    name: "سورة الغاشية Al-Ghaashiyah",
+    theReader: "بصوت القارئ   إسلام صبحي",
+    image: "img/quran3.png",
+    src: "https://server14.mp3quran.net/islam/Rewayat-Hafs-A-n-Assem/088.mp3",
+  },
+  {
+    name: "سورة الكهف Al-Kahf",
     theReader: "بصوت القارئ هزاع البلوشي",
     image: "img/quran3.png",
     src: "https://server11.mp3quran.net/hazza/018.mp3",
